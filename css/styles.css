@@ -1,0 +1,406 @@
+/*body*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*header*/
+.header {
+    margin-top: 1.2rem;
+    height: 89.2px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    margin-left: 6rem;
+    margin-top: 27.5px;
+}
+
+.sloganHeader {
+    font-family: 'Grape Nuts', cursive;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #85072D;
+    margin-right: 6rem;
+}
+
+/*navbar*/
+.navbar {
+    height: 5rem;
+    background-color: #002D5E;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    margin-right: 10rem;
+}
+
+.navbar ul li {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: .2rem;
+}
+
+.navbar ul li a:hover {
+    color: #85072D;
+}
+
+.navbar ul li a.selected {
+    color: #002D5E;
+    background-color: white;
+}
+
+/*background picture, index.html*/
+.backgroundpicture {
+    width: 100%;
+    height: auto;
+}
+
+/*body, index.html*/
+.indexmain {
+    height: 38rem;
+}
+
+.mainheader {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #002D5E;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.first, .second, .third {
+    height: 29rem;
+    width: 25rem;
+    border-radius: .5rem;
+    background-color: #85072D;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.first:hover, .second:hover, .third:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.testimonialpic {
+    width: 25rem;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonialpic:hover {
+    transform: scale(1.1);
+}
+
+/*leistungsangebot.html*/
+.leistungsangebotmain {
+    height: 40.5rem;
+}
+
+.ueberschrift {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #002D5E;
+    margin-top: 3rem;
+    margin-left: 12rem;
+}
+
+.serviceoption {
+    height: 14rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    border-radius: .5rem;
+    background-color: #85072D;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.pic {
+    height: 14rem;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pic:hover {
+    transform: scale(1.1);
+}
+
+.infotext {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.serviceHeader {
+    color: white;
+    margin-left: 1.25rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.serviceText {
+    color: white;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    font-size: 1rem;
+}
+
+.serviceoption:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/*unternehmen.html*/
+.teammain {
+    height: 45rem;
+}
+
+.team {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.werner, .niklas, .sabine {
+    height: 36rem;
+    width: 18rem;
+    border-radius: .5rem;
+    background-color: #85072D;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.werner:hover, .niklas:hover, .sabine:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.arbeiter {
+    width: 18rem;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arbeiter:hover {
+    transform: scale(1.1);
+}
+
+/*datenschutz.html*/
+.datenschutzmain {
+    height: 30rem;
+}
+
+/*impressum.html*/
+.impressummain {
+    height: 30rem;
+}
+
+/*kontakt.html*/
+.kontaktmain {
+    height: 47rem;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}   
+
+.left {
+    height: 37rem;
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    background-color: #A4A4A4;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.left::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #002D5E;
+    transition: width 0.5s ease;
+    z-index: 1;
+}
+
+.left:hover::after {
+    width: 100%;
+}
+
+.left:hover {
+    background-color: #002D5E;
+}
+
+.contents {
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-left: 1rem ;
+}
+
+.contactlogo {
+    height: auto;
+    width: 22rem;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.address {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.right {
+    height: 28rem;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.right:hover {
+    transform: scale(1.1);
+}
+
+/*contact*/
+.contactinfo {
+    height: 10rem;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.phonetext, .locationtext {
+    text-align: center;
+}
+
+.phone {
+    height: 2rem;
+    width: auto;
+}
+
+.location {
+    height: 2rem;
+    width: auto;
+}   
+
+.phonetext p, .locationtext p {
+    font-size: 1.25rem;
+    margin: .3rem;
+}
+
+.logo-container {
+    width: 20rem;
+}
+
+.logo-animated {
+    width: 100%;
+    height: auto;
+}
+
+.logo-animated polyline {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: draw 2s ease-out forwards,  pause-reset 4s linear infinite;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pause-reset {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2000;
+  }
+}
+
+/*footer*/
+.footer{
+    height: 4.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #002D5E;
+}
+
+.legal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+}
+
+.legal ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style-type: none;
+}
+
+.legal ul li {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.legal ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.legal ul li a:hover {
+    color: #85072D;
+}
