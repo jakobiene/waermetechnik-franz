@@ -20,7 +20,7 @@ body {
     height: 120px;
     width: auto;
     margin-left: 4rem;
-    margin-top: 27.5px;
+    /*margin-top: 27.5px;*/
 }
 
 .sloganHeader {
@@ -37,7 +37,7 @@ body {
 
 /*navbar*/
 .navbar {
-    min-height: 5rem;
+    min-height: 3rem;
     background-color: #002D5E;
     display: flex;
     align-items: center;
@@ -86,7 +86,7 @@ body {
 
 /*body, index.html*/
 .indexmain {
-    min-height: 38rem;
+    min-height: 36rem;
     padding: 2rem 1rem;
 }
 
@@ -109,7 +109,7 @@ body {
 }
 
 .first, .second, .third {
-    min-height: 29rem;
+    min-height: 28rem;
     width: 100%;
     max-width: 25rem;
     border-radius: .5rem;
@@ -145,9 +145,9 @@ body {
     font-size: 2.5rem;
     font-weight: 600;
     color: #002D5E;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 12rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .serviceoption {
@@ -219,6 +219,7 @@ body {
 }
 
 .werner, .niklas, .sabine {
+    margin-top: 2rem;
     min-height: 36rem;
     width: 100%;
     max-width: 18rem;
@@ -259,7 +260,7 @@ body {
 
 /*kontakt.html*/
 .kontaktmain {
-    min-height: 47rem;
+    min-height: 46rem;
     padding: 2rem 1rem;
 }
 
@@ -360,7 +361,7 @@ body {
 
 /*contact*/
 .contactinfo {
-    min-height: 10rem;
+    min-height: 1rem;
     background-color: #E0E0E0;
     display: flex;
     align-items: center;
@@ -433,7 +434,7 @@ body {
 
 /*footer*/
 .footer {
-    min-height: 4.2rem;
+    min-height: 2rem;
     display: flex;
     align-items: center;
     justify-content: right;
